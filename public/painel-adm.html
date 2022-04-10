@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>RPG ambulante - Painel administrativo</title>
+  </head>
+  <body>
+    <h1>Painel Administrativo</h1>
+    <fieldset id="form-new-user">
+      <div id="formArea">
+        <h2>Registrar usuário</h2>
+        <div class="inputArea">
+          <label for="fullname">Nome completo:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Digite seu nome completo..."
+          />
+        </div>
+        <div class="inputArea">
+          <label for="login">Login:</label>
+          <input
+            type="text"
+            id="login"
+            name="login"
+            placeholder="Digite seu usuário..."
+          />
+        </div>
+        <div class="inputArea">
+          <label for="password">Senha:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua senha..."
+          />
+        </div>
+        <div class="inputArea">
+          <button id="submit-user">Cadastrar</button>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset id="form-new-event">
+      <div id="formArea">
+        <h2>Registrar uma Mesa de RPG</h2>
+        <div class="inputArea">
+          <label for="title">Nome do evento:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Digite o nome do evento..."
+          />
+        </div>
+        <div class="inputArea">
+          <label for="end">Endereço:</label>
+          <input
+            type="text"
+            id="end"
+            name="end"
+            placeholder="Digite o endereço do evento..."
+          />
+        </div>
+        <div class="inputArea">
+          <label for="sist">Sistema:</label>
+          <input
+            type="text"
+            id="sist"
+            name="sist"
+            placeholder="Digite o sistema da mesa de RPG..."
+          />
+        </div>
+        <div class="inputArea">
+          <label for="desc">Descrição:</label>
+          <textarea id="desc" name="desc" rows="6" cols="50"></textarea>
+        </div>
+        <div class="inputAreaSide">
+          <label for="data">Data e Horário:</label>
+          <input type="date" id="data" name="data" />
+          <select id="time-hour">
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+          </select>
+          <h2>:</h2>
+          <select id="time-minute">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+          </select>
+        </div>
+        <div class="inputArea">
+          <button id="submit-event">Cadastrar</button>
+        </div>
+      </div>
+    </fieldset>
+
+    <script src="./scripts/adm.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+ADM
+
+1 - ADM pode cadastrar usuarios com fullname, user e password (feito)
+
+2 - ADM pode cadastrar um evento com title, description, date, time (feito)
+
+USUARIOS
+
+1 - LOGIN (feito)
+
+2 - Pode escolher um dos eventos cadastros para pegar um ingresso (feito)
+
+3 - Ao escolher um evento gerar um formulario (nome completo, informações do evento e qrcode) e adicionar o usuario no json eventos.json (user: usuario, hash: token, used: false)
+
+4 - Qrcode leva a um link com um query string (/evento?user=) do tipo hash
+
+5 - Ao ser usado mudar a informação no eventos.json used para true
+
+6 - se tentar ler o codigo novamente ou a data for diferente da do evento deve retornar um erro para o usuario

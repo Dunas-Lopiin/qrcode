@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>RPG ambulante - Painel administrativo</title>
+  </head>
+  <body>
+    <h1>Eventos</h1>
+    <h2>Escolha o evento:</h2>
+    <select id="eventos">
+      <option value="none">Escolha um evento</option>
+    </select>
+
+    <div id="event-info" class="event-order">
+      <h2 id="event-title"></h2>
+      <h3 id="event-system"></h3>
+      <p id="event-local"></p>
+      <p id="event-date"></p>
+      <p id="event-desc"></p>
+      <button id="get-pass">Pegar ingresso</button>
+    </div>
+
+    <div id="ingresso-info" class="event-order">
+      <div class="formAreaSide">
+        <div>
+          <h2 id="ingresso-user"></h2>
+          <h2 id="ingresso-title"></h2>
+        </div>
+        <img id="qrcode" src="" width="150" height="150" />
+      </div>
+      <h3 id="ingresso-system"></h3>
+      <p id="ingresso-local"></p>
+      <p id="ingresso-date"></p>
+      <p id="ingresso-desc"></p>
+      <button onclick="window.print()">Imprimir</button>
+    </div>
+
+    <script src="./scripts/user.js"></script>
+  </body>
+</html>
